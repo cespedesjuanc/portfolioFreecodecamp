@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);  
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+#navbar ul{
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-list a:hover {
+  background: #808080;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .nav-list {
+    margin: 0 auto;
+  }
+  
+  .nav-list a {
+    font-size: 1.2rem;
+  }
+  
+  #welcome-section {
+    font-weight: 1.5rem;
+  }
+
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-image: url('https://miro.medium.com/max/1400/0*TioFWkgMFgyRp8bB');*/
+  /*background-image:  url('https://uploads-ssl.webflow.com/5f3b6756337edd21f89e1fdd/5f41c4b4ac0649186265e1b7_excelsior-bg.jpg');*/
+  background-image: url('https://miro.medium.com/max/1400/1*uUv3yOK8z9TbG8Dz_gHwXw.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  position: relative;
+  padding-top: 0px;
+  margin-top: 0px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  
+}
+
+#welcome-section h1{
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  text-shadow: 5px 5px 5px black;
+  
+}
+
+#welcome-section h2{
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px black;
+  
+}
+
+@media (max-width: 600px) {
+  
+  #welcome-section h1 {
+    margin-top: 3.5rem;
+    font-size: 2.5rem;
+  }
+  #welcome-section h2 {
+    font-size: 1.5rem;
+  }
+} 
+    
+
+#projects {
+  display: block;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: #5D6D7E;
+  color: #fff;
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px black;
+  
+}
+.projects-head {
+  color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+      
+}
+
+.project {
+  box-shadow: 1px 1px 2px rbg(0 0 0 / 50%);
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.code {
+  display: none;
+  
+}
+
+.project:hover .code {
+  display: revert;
+  color: #fff;
+}
+
+.project-image {
+  display: block;
+  height: calc(100% - 4.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  padding: 0 2rem;
+  background: #007fbd;
+  color: #fff;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.contact-header h2{
+  font-size: 3rem;
+}
+
+.contact-header p{
+  font-size: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+  
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.2s ease-out;
+}
+
+.social-links a:hover {
+  transform: translateY(15px);
+}
+
+.btn_social_links {
+  padding: 1.2rem 1.5rem;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: black;
+   
+}
+
+footer p {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: white;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+@media (max-width: 600px) {
+    .contact-header h2{
+    font-size: 2rem;
+  }
+
+  .contact-header p{
+    font-size: 1rem;
+  }
+}  
